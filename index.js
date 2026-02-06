@@ -15,10 +15,11 @@ mongoose
         .connect(MONGOURL)
         .then(()=>{
             console.log("DB connected successfully.")
-            app.listen(PORT,()=>{
-                console.log(`server is running on port:${PORT}`)
+            app.listen(PORT,() => {
+                console.log(`server is running on port:${PORT}`);
               });
             })
             .catch((error)=> console.log(error));
 
-app.use("/api",route);         
+      
+app.use("/api",route); 
